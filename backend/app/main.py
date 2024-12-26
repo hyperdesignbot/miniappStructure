@@ -9,7 +9,7 @@ from app.routers import bot_routes
 app = FastAPI(title="Telegram MiniApp Backend")
 
 # Include routers
-app.include_router(bot_routes.router, prefix="/bot", tags=["Bot API"])
+app.include_router(bot_routes.router, prefix="/api", tags=["Bot API"])
 # app.include_router(user_routes.router, prefix="/user", tags=["User API"])
 
 # Initialize APScheduler

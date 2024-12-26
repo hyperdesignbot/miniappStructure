@@ -24,4 +24,4 @@ logid = 223356203
 admins = str(environ.get("admins")).split(',')
 admins = list(map(lambda x:int(x),admins))
 
-
+URL_MINIAPP=str(environ.get("URL_MINIAPP"))
