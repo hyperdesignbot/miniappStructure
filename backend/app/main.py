@@ -1,9 +1,6 @@
-import logging
-
 from fastapi import FastAPI
 import asyncio
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from apscheduler.triggers.interval import IntervalTrigger
 from pytz import timezone  # Import pytz for timezone handling
 
 from app.telegram_bot import application
@@ -32,7 +29,7 @@ async def startup_event():
     scheduler.add_job(
         example_task,
         trigger='interval',  # Runs every 10 seconds
-        seconds=1,
+        seconds=600,
     )
 
     # Start the scheduler

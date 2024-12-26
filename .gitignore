@@ -1,0 +1,76 @@
+# Virtual environment directories
+__pycache__/
+*.pyc
+
+# Python virtual environments (venv, .env, etc.)
+/venv/
+/.env
+/.env.*
+
+# Ignore IDE or editor specific files
+*.swp
+*.swo
+*.py~
+*.log
+*.bak
+.idea/
+
+# Ignore cache directories
+.cache/
+build/
+dist/
+*.egg-info/
+
+# Ignore server artifacts
+logs/
+tmp/
+proc/
+*.sqlite3
+*.sqlite3-journal
+
+# Ignore node_modules, package-lock, yarn.lock for node apps
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore build artifacts in React projects
+build/
+public/
+
+# Ignore unnecessary Python package files
+*.tar.gz
+*.egg
+*.tar
+__pycache__/
+
+# Docker-related files
+.dockerignore
+.Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+Docker/
+
+# Ignore deployment-related artifacts
+*.bak
+*.tar.gz
+*.zip
+
+# Ignore settings specific to deployment or machine settings
+.settings
+*~
+config/
+
+# Specific for FastAPI, Pyrogram, and Telegram MiniApp projects
+.env
+.env.*
+.telegram_bot/
+
+# Ignore deployment logs or specific runtime environment files
+logs/
+*.log
+proc/
+
+# Ignore test coverage files
+.coverage
+.cache/
+pytest_cache/
